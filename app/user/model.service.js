@@ -1,7 +1,7 @@
 import moment from "moment";
 
 class UserService {
-    constructor(name, age, gender) {
+    constructor(name = 'No name', age = -1, gender = "unknown") {
         this.name = name;
         this.age = age;
         this.gender = gender;

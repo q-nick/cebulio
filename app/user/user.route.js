@@ -1,4 +1,9 @@
 import AddController from "./add.controller";
 import EditorController from "./editor.controller";
 
-export {EditorController, AddController};
+let routes = {
+    'edit': EditorController,
+    'add': AddController
+};
+
+export default routes;
