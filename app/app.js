@@ -1,5 +1,5 @@
+//app
 import * as User from "./user/user.module";
+import cebulio from "../cebulio";
 
-console.log(User);
-console.log(new User.EditorController());
-console.log(User.Routes);
+cebulio.app({user: User});

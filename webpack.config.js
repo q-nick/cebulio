@@ -1,6 +1,7 @@
 module.exports = {
     entry: './app/app.js',
     output: {filename: './app.js'},
+    devtool: 'source-map',
     watchOptions: {
         poll: 1000
     },
