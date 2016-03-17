@@ -5,6 +5,9 @@ module.exports = {
     watchOptions: {
         poll: 1000
     },
+    node: {
+        fs: "empty"
+    },
     module: {
         loaders: [
             {

@@ -1,10 +1,14 @@
+import Handlebars from "handlebars";
+
 class BaseController {
     constructor() {
         this.name = 'base';
+        this.template = "<p>{{name}}</p>";
     }
 
     draw() {
-        console.log('drawing:', this.name);
+        var template = Handlebars.compile(this.template);
+        document.querySelector('body').innerHTML = template(this);
     }
 }
 
